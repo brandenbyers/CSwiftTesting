@@ -1,0 +1,4 @@
+module Cee {
+    header "Bridging-Header.h"
+    export *
+}

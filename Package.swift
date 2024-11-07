@@ -4,15 +4,17 @@ import PackageDescription
 
 let package = Package(
     name: "CSTest",
+    
     products: [
         .library(
             name: "CSTest",
             targets: ["Cee"]),
     ],
     targets: [
-        .target(name: "Cee"),
+        .target(name: "Cee", path: "src", publicHeadersPath: "includes"),
         .testTarget(
             name: "CeeTests",
-            dependencies: ["Cee"]),
+            dependencies: ["Cee"],
+            path: "test"),
     ]
 )
