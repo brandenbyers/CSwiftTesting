@@ -11,7 +11,7 @@ let package = Package(
             targets: ["Cee"]),
     ],
     targets: [
-        .target(name: "Cee", path: "src"),
+        .target(name: "Cee", path: "src", publicHeadersPath: "includes"),
         .testTarget(
             name: "CeeTests",
             dependencies: ["Cee"],
